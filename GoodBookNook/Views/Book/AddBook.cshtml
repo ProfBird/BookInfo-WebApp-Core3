@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add a Book</title>
+</head>
+<body>
+    <form method="post">
+        <label for="title">Title</label>
+        <input name="title" /><br />
+        <label for="author">Author</label>
+        <input name="author" /><br />
+        <label for="pubDate">Publication Date</label>
+        <input name="pubDate" /><br />
+        <input type="submit" value="Enter" />
+    </form>
+    <p>In the future, you'll be able to post a review here</p>
+    <a href="Index">Back to the list of books</a>
+</body>
+</html>
+
+<!-- Note: the name attributes in the input elements must match the
+    parameter names in the controller post method. The name attribute
+    must be used, not the id attribute. -->

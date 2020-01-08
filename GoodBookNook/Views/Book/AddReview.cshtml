@@ -1,0 +1,22 @@
+﻿@model String
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add a Review</title>
+</head>
+<body>
+    <h1>Review for <em>@Model</em></h1>
+
+    <form method="post">
+        <label for="reviewtext">Your review</label><br />
+        <textarea type="text" name="reviewtext"></textarea><br />
+        <label for="reviewer">Your name</label><br />
+        <input name="reviewer" /><br />
+
+        <input type="submit" value="Enter" />
+    </form>
+</body>
+</html>
