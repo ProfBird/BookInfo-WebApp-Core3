@@ -1,8 +1,9 @@
 ﻿using GoodBookNook.Models;
+using GoodBookNook.Repositories;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GoodBookNook.Repositories
+namespace GoodBookNook.Tests
 {
     // This is class is just for testing.
     public class FakeBookRepository : IBookRepository

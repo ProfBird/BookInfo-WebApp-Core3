@@ -33,6 +33,7 @@ namespace GoodBookNook
 
             // Inject our repositories into our controllers
             services.AddTransient<IBookRepository, BookRepository>();
+            services.AddTransient<IAuthorRepository, AuthorRepository>();
 
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
