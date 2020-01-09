@@ -1,4 +1,4 @@
-﻿
+﻿@model Book;
 @{
     Layout = null;
 }
@@ -8,9 +8,15 @@
     <title>Add a Book</title>
 </head>
 <body>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+
     <form method="post">
-        <label for="title">Title</label>
-        <input name="title" /><br />
+        <div asp-validation-summary="ModelOnly" style="background-color: red"></div>
+        <label asp-for="Title">Title</label>
+        <span asp-validation-for="Title"></span>
+        <input asp-for="Title" /><br />
         <label for="author">Author</label>
         <input name="author" /><br />
         <label for="pubDate">Publication Date</label>
