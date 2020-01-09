@@ -1,0 +1,15 @@
+﻿@model List<GoodBookNook.Models.Author>
+@{
+    Layout = null;
+}
+
+@foreach (var a in Model)
+{
+    @:<p>
+        @:Name: @a.Name <br />
+        @:Birthday: @a.Birthday.ToString("MMMM dd, yyyy") <br />
+        <a asp-action="Edit" asp-route-id="@a.AuthorID">Edit</a>
+    @:</p>
+}
+
+<a href="/Home">Home</a>

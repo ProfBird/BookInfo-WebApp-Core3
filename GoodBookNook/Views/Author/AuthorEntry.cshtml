@@ -1,0 +1,26 @@
+﻿@model GoodBookNook.Models.Author
+
+@{
+    Layout = null;
+}
+
+<div>
+    <form method="post">
+        <div>
+            <label for="Name">Name</label><br />
+            <input name="name" value="@Model.Name" />
+        </div>
+        <div>
+            <label for="date">Birth Date</label><br />
+            <input name="date" value="@Model.Birthday" />
+        </div>
+        <input name="authorid" value="@Model.AuthorID" type="hidden" />
+         <div>
+            <input type="submit" value="Enter"  />
+        </div>
+    </form>
+</div>
+
+<p>
+    <a asp-action="Index">Back to Author List</a>
+</p>

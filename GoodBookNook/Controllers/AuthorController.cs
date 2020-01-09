@@ -1,7 +1,6 @@
 ﻿using System;
 using GoodBookNook.Models;
 using GoodBookNook.Repositories;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GoodBookNook.Controllers
@@ -16,14 +15,12 @@ namespace GoodBookNook.Controllers
         }
 
         /* Action methods */
-        [Authorize]
+
         public ViewResult Index()
         {
             var authors = authorRepo.GetAllAuthors();
             return View(authors);
         }
-
-
 
         [HttpPost]
         public RedirectToActionResult Add(string name, DateTime bDay, int bookId)
