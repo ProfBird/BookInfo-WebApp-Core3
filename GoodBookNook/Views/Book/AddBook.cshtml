@@ -14,16 +14,25 @@
 
     <form method="post">
         <div asp-validation-summary="All" style="background-color: red"></div>
+
         <label asp-for="Title">Title</label>
         <input asp-for="Title" />
         <span asp-validation-for="Title"></span><br />
-        <label for="author">Author</label>
-        <input name="author" /><br />
+
+        <label asp-for="@Model.Authors[0].Name">Author</label>
+        <input asp-for="@Model.Authors[0].Name" />
+        <span asp-validation-for="@Model.Authors[0].Name"></span><br />
+
         <label asp-for="PubDate">Publication Date</label>
-        <input asp-for="PubDate" />
+        <input asp-for="PubDate" placeholder="mm/dd/yyyy" />
         <span asp-validation-for="PubDate"></span><br />
+        <!-- Since we are binding the form field to the DateTime property
+             the input will need to be in the form shown so it will convert
+             from a string to a DateTime object properly -->
+
         <input type="submit" value="Enter" />
     </form>
+
     <p>In the future, you'll be able to post a review here</p>
     <a href="Index">Back to the list of books</a>
 </body>

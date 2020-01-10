@@ -22,25 +22,22 @@ namespace GoodBookNook.Controllers
             return View(books);
         }
 
-        public IActionResult AddBook()
-        {
-            return View();
-        }
-
         public IActionResult Authors()
         {
             return View();
         }
 
-        [HttpPost]
-        public RedirectToActionResult AddBook(string title,
-                                              string author, string pubDate)
+        public IActionResult AddBook()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public RedirectToActionResult AddBook(Book book, string PubDate)
+        {
+        //    book.PubDate = DateTime.Parse("1/" + PubDate);
             if (ModelState.IsValid)
             {
-                Book book = new Book { Title = title };
-                book.Authors.Add(new Author() { Name = author });
-                book.PubDate = DateTime.Parse("1/" + pubDate);  // added a month prefix to make the parse method happy
                 repo.AddBook(book);
             }
 

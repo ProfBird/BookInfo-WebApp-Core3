@@ -16,10 +16,9 @@ namespace GoodBookNook.Models
         [StringLength(100, MinimumLength = 2)]
         public string Title { get; set; }
 
-        // [DataType(DataType.Date)]  // HTML5 type that will cause a calendar picker to be displayed
+        [DataType(DataType.Date)]  // causes default validation and sets the HTML5 data type
         [Required]
-        [DisplayFormat(DataFormatString = "{0:yyyy}")]  // only display formatting, doesn't validate
-        [RegularExpression(@"^(1[0-9]|20)\d\d$", ErrorMessage = "Enter a four digit year")]
+        [DisplayFormat(DataFormatString = "{0:yyyy}")]  // only for display formatting with an HTML helper, doesn't validate
         public DateTime PubDate { get; set; }
 
         public List<Author> Authors { get { return authors; } }
