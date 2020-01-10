@@ -16,8 +16,8 @@ namespace GoodBookNook.Models
         [StringLength(100, MinimumLength = 2)]
         public string Title { get; set; }
 
-        [DataType(DataType.Date)]  // causes default validation and sets the HTML5 data type
         [Required]
+        [DataType(DataType.Date)]  // causes default validation and sets the HTML5 data type
         [DisplayFormat(DataFormatString = "{0:yyyy}")]  // only for display formatting with an HTML helper, doesn't validate
         public DateTime PubDate { get; set; }
 

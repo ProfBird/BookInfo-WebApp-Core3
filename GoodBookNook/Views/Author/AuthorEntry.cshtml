@@ -4,19 +4,33 @@
     Layout = null;
 }
 
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+
 <div>
     <form method="post">
+        <div asp-validation-summary="All" style="background-color: red"></div>
+
         <div>
-            <label for="Name">Name</label><br />
-            <input name="name" value="@Model.Name" />
+
+            <label asp-for="Name">Name</label><br />
+            <input asp-for="Name" value="@Model.Name" />
+
+            @* @Html.EditorFor(m => m.Name) *@
+            <span asp-validation-for="Name"></span>
         </div>
         <div>
-            <label for="date">Birth Date</label><br />
-            <input name="date" value="@Model.Birthday" />
+
+            <label asp-for="Birthday">Birth Date</label><br />
+            @*   <input asp-for="Birthday" value="@Model.Birthday" /> *@
+
+            @Html.EditorFor(m => m.Birthday)
+            <span asp-validation-for="Birthday"></span>
         </div>
         <input name="authorid" value="@Model.AuthorID" type="hidden" />
-         <div>
-            <input type="submit" value="Enter"  />
+        <div>
+            <input type="submit" value="Enter" />
         </div>
     </form>
 </div>

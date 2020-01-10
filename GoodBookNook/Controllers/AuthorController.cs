@@ -25,7 +25,10 @@ namespace GoodBookNook.Controllers
         [HttpPost]
         public RedirectToActionResult Add(string name, DateTime bDay, int bookId)
         {
-            authorRepo.Add(new Author { Name = name, Birthday = bDay });
+            if (ModelState.IsValid)
+            {
+                authorRepo.Add(new Author { Name = name, Birthday = bDay });
+            }
             return RedirectToAction("Index", "Book");
         }
 
@@ -36,16 +39,19 @@ namespace GoodBookNook.Controllers
         }
 
         [HttpPost]
-        public RedirectToActionResult Edit(String name, DateTime bDay, int authorid, int bookid)
+        public RedirectToActionResult Edit(String Name, DateTime Birthday, int authorid)
         {
-            Author author = new Author
+            if (ModelState.IsValid)
             {
-                Name = name,
-                Birthday = bDay,
-                AuthorID = authorid
-            };
+                Author author = new Author
+                {
+                    Name = Name,
+                    Birthday = Birthday,
+                    AuthorID = authorid
+                };
 
-            authorRepo.Edit(author);
+                authorRepo.Edit(author);
+            }
             return RedirectToAction("Index");
         }
 

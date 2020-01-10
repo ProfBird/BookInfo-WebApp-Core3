@@ -11,10 +11,8 @@ namespace GoodBookNook.Models
         [StringLength(100, MinimumLength = 2)]
         public string Name { get; set; }
 
-        /*
-        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]  // only display formatting, doesn't validate
-        [RegularExpression(@"^(0[1-9]|1[012])/(0[1-9]|[12][0-9]|3[01])/(20\d\d)$", ErrorMessage = "Enter a date in mm/dd/yyyy format")]
-        */
+        [DataType(DataType.Date)]  // causes default validation and sets the HTML5 data type
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}", ApplyFormatInEditMode = true)]  // only for display formatting with an HTML helper, doesn't validate
         public DateTime Birthday { get; set; }
     }
 }

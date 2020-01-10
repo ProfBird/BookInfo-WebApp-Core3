@@ -33,9 +33,8 @@ namespace GoodBookNook.Controllers
         }
 
         [HttpPost]
-        public RedirectToActionResult AddBook(Book book, string PubDate)
+        public RedirectToActionResult AddBook(Book book)
         {
-        //    book.PubDate = DateTime.Parse("1/" + PubDate);
             if (ModelState.IsValid)
             {
                 repo.AddBook(book);
