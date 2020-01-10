@@ -4,4 +4,4 @@ This web app demonstrates key concepts in the development of an ASP.NET Core MVC
 
 Each of the following branches demonstrates a particular concept or technique:
 1. Initial: This was copied from [LCC-CIT/CS295N-Bookinfo-Core-21](https://github.com/LCC-CIT/CS295N-Bookinfo-Core-21/tree/EF-SeedData), the project was updated to use .net core 3.1, and code supporting author views was added.
-2. Validation: 
+2. Validation: Added model validation to the Book model, BookController.AddBook, and the AddBook view.
