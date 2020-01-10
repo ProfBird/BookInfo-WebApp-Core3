@@ -13,14 +13,15 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
 
     <form method="post">
-        <div asp-validation-summary="ModelOnly" style="background-color: red"></div>
+        <div asp-validation-summary="All" style="background-color: red"></div>
         <label asp-for="Title">Title</label>
-        <span asp-validation-for="Title"></span>
-        <input asp-for="Title" /><br />
+        <input asp-for="Title" />
+        <span asp-validation-for="Title"></span><br />
         <label for="author">Author</label>
         <input name="author" /><br />
-        <label for="pubDate">Publication Date</label>
-        <input name="pubDate" /><br />
+        <label asp-for="PubDate">Publication Date</label>
+        <input asp-for="PubDate" />
+        <span asp-validation-for="PubDate"></span><br />
         <input type="submit" value="Enter" />
     </form>
     <p>In the future, you'll be able to post a review here</p>

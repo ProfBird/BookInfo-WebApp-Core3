@@ -12,13 +12,16 @@ namespace GoodBookNook.Models
         private List<Author> authors = new List<Author>();
         private List<Review> reviews = new List<Review>();
 
+        [Required]
         [StringLength(100, MinimumLength = 2)]
         public string Title { get; set; }
+
+        // [DataType(DataType.Date)]  // HTML5 type that will cause a calendar picker to be displayed
+        [Required]
+        [DisplayFormat(DataFormatString = "{0:yyyy}")]  // only display formatting, doesn't validate
+        [RegularExpression(@"^(1[0-9]|20)\d\d$", ErrorMessage = "Enter a four digit year")]
         public DateTime PubDate { get; set; }
 
-        // These are "navigational properties", they will
-        // cause EF to create FK fields for BookID
-        // in Author and Review tables.
         public List<Author> Authors { get { return authors; } }
         public List<Review> Reviews { get { return reviews; } }
     }

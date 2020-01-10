@@ -14,10 +14,10 @@
         <h2> @book.Title </h2>
         @foreach (Author a in book.Authors)
         {
-           @a.Name; <br />
+            @a.Name; <br />
         }
 
-        @book.PubDate; <br />
+        @:Published  @Html.DisplayFor(modelItem => book.PubDate)<br />
         <br />
         @if (book.Reviews.Count > 0)
         {
