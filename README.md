@@ -7,4 +7,4 @@ Each of the following branches demonstrates a particular concept or technique:
 2. **Validation**: Added model validation to:
    -  The Book model and the associated view and controller action method.
    - The Author model and associated view and controller action methods.
-3. **Authentication**: 
+3. **Identity**: 
