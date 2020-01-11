@@ -1,3 +1,5 @@
+# BookInfo-WebApp-Core3
+
 # Changes on the validation branch
 
 ## Changes to the models
@@ -72,7 +74,7 @@
   <!-- additional code omitted, it repeats the same pattern -->
   ```
 
-  Just the `asp-validation-summary` and `asp-validation-for` were added on this branch.
+  Just the `asp-validation-summary` and `asp-validation-for` were added on this branch.
 
 - Author/AuthorEntry: Similar changes to those above.
 
