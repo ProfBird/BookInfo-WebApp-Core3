@@ -57,7 +57,7 @@ namespace GoodBookNook.Controllers
             repo.AddReview(book,
                 new Review()
                 {
-                    Reviewer = new User() { Name = reviewer },
+                    Reviewer = new AppUser() { Name = reviewer },
                     ReviewText = reviewText
                 });
             return RedirectToAction("Index");
