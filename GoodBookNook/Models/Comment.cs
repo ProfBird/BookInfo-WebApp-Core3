@@ -12,7 +12,7 @@ namespace GoodBookNook.Models
 
 
         // EF will generate a FK field, UserNameUserID, in the Comment table.
-        public User UserName { get; set; }
+        public AppUser UserName { get; set; }
 
         // EF will generate a FK field, UserReviewReviewID, in the Comment table.
         public Review UserReview { get; set; }

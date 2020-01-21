@@ -13,7 +13,7 @@ namespace GoodBookNook.Repositories
                 Author author = new Author { Name = "Samuel Shellabarger" };
                 context.Authors.Add(author);
 
-                User user = new User { Name = "Walter Cronkite" };
+                AppUser user = new AppUser { Name = "Walter Cronkite" };
                 context.Users.Add(user);
 
                 Review review = new Review
