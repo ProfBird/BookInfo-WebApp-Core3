@@ -2,10 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using GoodBookNook.Models;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GoodBookNook.Controllers
 {
-
+   [Authorize]
     public class AdminController : Controller
     {
         private UserManager<AppUser> userManager;

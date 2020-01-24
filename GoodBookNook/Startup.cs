@@ -59,7 +59,8 @@ namespace GoodBookNook
             }
 
             services.AddIdentity<AppUser, IdentityRole>()
-                .AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -79,6 +80,8 @@ namespace GoodBookNook
             app.UseStaticFiles();
             app.UseCookiePolicy();
             app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
@@ -86,11 +89,10 @@ namespace GoodBookNook
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            app.UseAuthentication();
-
             // Add a few books and reviews as sample data.
             SeedData.Seed(context);
-        }
 
+            AppDbContext.CreateAdminAccount(app.ApplicationServices, Configuration).Wait();
+        }
     }
 }
