@@ -8,4 +8,6 @@ Each of the following branches demonstrates a particular concept or technique:
    -  The Book model and the associated view and controller action method.
    - The Author model and associated view and controller action methods.
 3. **Identity**: Added Administrative features for user account management with Identity
+4. **Authentication**: Added login and logout views and supporting controller methods and code in Startup.
+5. **Authorization**: Added code to Startup and AppDbContext to support role base authorization. Created a seed Admins role and user.
 
