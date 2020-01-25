@@ -48,7 +48,7 @@ namespace GoodBookNook
                 // For MariaDB
                 services.AddDbContext<AppDbContext>(
                     options => options.UseMySql(
-                        Configuration.GetConnectionString("ConnectionStrings:MySqlConnection")));
+                        Configuration["ConnectionStrings:MySqlConnection"]));
             }
             else
             {

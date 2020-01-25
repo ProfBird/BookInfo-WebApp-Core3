@@ -21,12 +21,7 @@ namespace GoodBookNook.Controllers
             books.Sort((b1, b2) => string.Compare(b1.Title, b2.Title, StringComparison.Ordinal));
             return View(books);
         }
-
-        public IActionResult Authors()
-        {
-            return View();
-        }
-
+        
         public IActionResult AddBook()
         {
             return View();

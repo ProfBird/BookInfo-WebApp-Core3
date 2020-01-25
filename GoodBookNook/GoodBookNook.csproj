@@ -18,4 +18,11 @@
   <ItemGroup>
     <Folder Include="Views\Author\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="mono_crash.mem.11631.1.blob" />
+    <None Remove="mono_crash.mem.16960.1.blob" />
+    <None Remove="mono_crash.mem.30165.1.blob" />
+    <None Remove="packages-microsoft-prod.deb" />
+  </ItemGroup>
 </Project>
