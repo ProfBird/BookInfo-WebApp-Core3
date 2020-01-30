@@ -76,6 +76,14 @@ namespace GoodBookNook
                 app.UseHsts();
             }
 
+            app.Use(async (httpContext, next) =>
+            {
+                // Click-jacking mitigation
+                // Tell the browser that the page can only be framed if the framing domain is this site's domain. 
+                httpContext.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
+                await next();
+            });
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

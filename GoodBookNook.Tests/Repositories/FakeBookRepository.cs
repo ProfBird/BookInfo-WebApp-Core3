@@ -20,10 +20,14 @@ namespace GoodBookNook.Tests
         public void AddReview(Book book, Review review)
         {
             // There will only be one book with a matching ID, 
-            // but I'm using books.First so I return a single Book object instead of a collection.
-            Book theBook = books.First<Book>(b => b.BookID == book.BookID);
-            theBook.Reviews.Add(review);
+            // but I'm using books.First which will return a single Book object instead of a collection.
+            if (book != null)
+            { 
+                Book theBook = books.FirstOrDefault<Book>(b => b.BookID == book.BookID);
+                theBook.Reviews.Add(review);
+            }
         }
+
         public Book GetBookByTitle(string title)
         {
             Book book = books.Find(b => b.Title == title);

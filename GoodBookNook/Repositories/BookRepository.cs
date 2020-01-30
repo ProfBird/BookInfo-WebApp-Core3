@@ -36,7 +36,7 @@ namespace GoodBookNook.Repositories
         public  Book GetBookByTitle(string title)
         {
             Book book;
-            book = context.Books.First(b => b.Title == title);
+            book = context.Books.FirstOrDefault(b => b.Title == title);
             return book;
         }
 

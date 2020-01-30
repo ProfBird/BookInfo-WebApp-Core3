@@ -27,7 +27,7 @@ namespace GoodBookNook.Repositories
 
         public Author GetAuthorById(int id)
         {
-            return context.Authors.First(a => a.AuthorID == id);
+            return context.Authors.FirstOrDefault(a => a.AuthorID == id);
         }
 
         public List<Author> GetAuthorsByBook(Book book)
@@ -51,7 +51,7 @@ namespace GoodBookNook.Repositories
 
         public int Delete(int id)
         {
-            var authorFromDb = context.Authors.First(a => a.AuthorID == id);
+            var authorFromDb = context.Authors.FirstOrDefault(a => a.AuthorID == id);
             context.Remove(authorFromDb);
             return context.SaveChanges();
         }
