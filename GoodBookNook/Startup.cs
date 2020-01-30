@@ -76,6 +76,7 @@ namespace GoodBookNook
                 app.UseHsts();
             }
 
+            /*
             app.Use(async (httpContext, next) =>
             {
                 // Click-jacking mitigation
@@ -83,6 +84,7 @@ namespace GoodBookNook
                 httpContext.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
                 await next();
             });
+            */
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
