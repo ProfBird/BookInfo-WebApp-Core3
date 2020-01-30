@@ -52,8 +52,7 @@ namespace GoodBookNook.Controllers
 
         [HttpPost]
         public async Task<RedirectToActionResult> AddReview(string title,
-                                                string reviewText,
-                                                string reviewer)
+                                                string reviewText)
         {
             Book book = repo.GetBookByTitle(title);
             repo.AddReview(book,

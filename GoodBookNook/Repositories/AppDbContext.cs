@@ -43,6 +43,7 @@ namespace GoodBookNook.Repositories
                 AppUser user = new AppUser
                 {
                     UserName = username,
+                    Name = username,    // Normally would be a real name, not a user name
                     Email = email
                 };
                 IdentityResult result = await userManager
