@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Net.Http.Headers;
 
 namespace GoodBookNook
 {
@@ -28,7 +29,7 @@ namespace GoodBookNook
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = SameSiteMode.None;
+                options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.None;
             });
 
             services.AddMvc();
@@ -76,15 +77,15 @@ namespace GoodBookNook
                 app.UseHsts();
             }
 
-            /*
             app.Use(async (httpContext, next) =>
             {
                 // Click-jacking mitigation
                 // Tell the browser that the page can only be framed if the framing domain is this site's domain. 
                 httpContext.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
+                // Prevent session IDs on cookies from being cached, but allow everything else to be cached.
+                // httpContext.Response.Headers[HeaderNames.CacheControl]="no-cashe='set-cookie, set-cookie2'";
                 await next();
             });
-            */
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
