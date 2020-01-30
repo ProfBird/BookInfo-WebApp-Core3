@@ -58,8 +58,6 @@ namespace GoodBookNook.Controllers
             repo.AddReview(book,
                 new Review()
                 {
-                    // Reviewer = new AppUser() { Name = reviewer },
-                   // Reviewer  =await userManager.FindByNameAsync(reviewer)
                    Reviewer = await userManager.GetUserAsync(HttpContext.User),
                     ReviewText = reviewText
                 });
