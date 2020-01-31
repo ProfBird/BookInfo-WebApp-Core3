@@ -11,15 +11,23 @@ namespace GoodBookNook.Repositories
 {
     public class AppDbContext : IdentityDbContext
     {
-        public AppDbContext(
-           DbContextOptions<AppDbContext> options) : base(options)
+        protected readonly IConfiguration Config;
+        public AppDbContext(IConfiguration configuration)
         {
+            Config = configuration;
         }
+        
         public DbSet<Book> Books { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Review> Reviews { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            options.UseSqlServer(
+                    Config["ConnectionStrings:MsSqlConnection"]);
+        }
+        
         public static async Task CreateAdminAccount(IServiceProvider serviceProvider, IConfiguration configuration)
         {
             UserManager<AppUser> userManager =

@@ -40,23 +40,18 @@ namespace GoodBookNook
 
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                services.AddDbContext<AppDbContext>(
-                    options => options.UseSqlServer(
-                        Configuration["ConnectionStrings:MsSqlConnection"]));
+                // For SQL Server, localdb
+                services.AddDbContext<AppDbContext>();
             }
             else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
             {
                 // For MariaDB
-                services.AddDbContext<AppDbContext>(
-                    options => options.UseMySql(
-                        Configuration["ConnectionStrings:MySqlConnection"]));
+                services.AddDbContext<MySqlDbContext>();
             }
             else
             {
                 // For Mac OS with SQLite
-                services.AddDbContext<AppDbContext>(
-                  options => options.UseSqlite(
-                      Configuration["ConnectionStrings:SQLiteConnection"]));
+                services.AddDbContext<SqliteDbContext>();
             }
 
             services.AddIdentity<AppUser, IdentityRole>()

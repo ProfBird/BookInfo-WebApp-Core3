@@ -11,3 +11,6 @@ Each of the following branches demonstrates a particular concept or technique:
 4. **Authentication**: Added login and logout views and supporting controller methods and code in Startup.
 5. **Authorization**: Added code to Startup and AppDbContext to support role base authorization. Created a seed Admins role and user.
 
+**MultipleDbContexts**: Using multiple DbContexts and Migration folders. Use these CLI commands:
+- `dotnet ef migrations add InitialCreate --context MySqlDbContext --output-dir Migrations/MySqlMigrations`
+- `dotnet ef database update --context MySqlDbContext`
