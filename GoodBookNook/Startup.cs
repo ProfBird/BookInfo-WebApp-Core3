@@ -101,7 +101,7 @@ namespace GoodBookNook
             });
 
             // Add a few books and reviews as sample data.
-            SeedData.Seed(context);
+            SeedData.Seed(context, app.ApplicationServices);
 
             AppDbContext.CreateAdminAccount(app.ApplicationServices, Configuration).Wait();
         }
