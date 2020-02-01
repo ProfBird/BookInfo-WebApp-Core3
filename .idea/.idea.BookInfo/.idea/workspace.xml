@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="823d5d73-c293-4d83-8ca4-a49ec033bb4c" name="Default Changelist" comment="Refactored Db providers in Startup and DbContext classes">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookInfo.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BookInfo.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GoodBookNook.Tests/BookTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GoodBookNook.Tests/BookTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GoodBookNook/GoodBookNook.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GoodBookNook/GoodBookNook.csproj" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Zap" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/GoodBookNook.Tests/BookTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Models/LoginViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ACF3BB6B-D63D-4F2F-B9D4-174126FEB909/8/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Controllers/AdminController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D8DA5E36-5373-4031-BC4F-5536C9B0AA38/3/HostBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Controllers/AccountController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Views/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Views/Admin/Create.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7291AF17-09EB-42BD-AB60-CE54BF3358E1/B/ConfigureServicesBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CDAE4105-7E89-4723-8979-C3C1D3936A03/1D8/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Migrations/AppDbContextModelSnapshot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Controllers/AuthorController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Controllers/BookController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Repositories/IBookRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Repositories/SeedData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Repositories/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Repositories/AuthorRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GoodBookNook/Repositories/BookRepository.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/GoodBookNook/Views/Admin/Create.cshtml" />
+        <option value="$PROJECT_DIR$/GoodBookNook/Models/LoginViewModel.cs" />
+        <option value="$PROJECT_DIR$/GoodBookNook/Views/Account/Login.cshtml" />
+        <option value="$PROJECT_DIR$/GoodBookNook/Repositories/SeedData.cs" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/GoodBookNook/Program.cs" />
+        <option value="$PROJECT_DIR$/GoodBookNook/Controllers/BookController.cs" />
+        <option value="$PROJECT_DIR$/GoodBookNook/Repositories/MySqlDbContext.cs" />
+        <option value="$PROJECT_DIR$/GoodBookNook/Repositories/SqliteDbContext.cs" />
+        <option value="$PROJECT_DIR$/GoodBookNook/Repositories/AppDbContext.cs" />
+        <option value="$PROJECT_DIR$/GoodBookNook/Startup.cs" />
+        <option value="$PROJECT_DIR$/GoodBookNook.Tests/BookTest.cs" />
+        <option value="$PROJECT_DIR$/MySqlMigrations/Class1.cs" />
+        <option value="$PROJECT_DIR$/MySqlMigrations/MySqlMigrations.csproj" />
+      </list>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea/.idea.BookInfo/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WBQudzRrO2zegJIJV0Z60ye4G7" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.4" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GoodBookNook/Migrations/MySqlMigrations/20200131164140_InitialCreate.Designer.cs" />
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.GoodBookNook">
+    <configuration name="GoodBookNook" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/GoodBookNook/GoodBookNook.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="GoodBookNook" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoodBookNook: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/GoodBookNook/GoodBookNook.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v3.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="823d5d73-c293-4d83-8ca4-a49ec033bb4c" name="Default Changelist" comment="" />
+      <created>1578620732541</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578620732541</updated>
+      <workItem from="1578620736836" duration="606000" />
+      <workItem from="1579891543513" duration="41000" />
+      <workItem from="1579891769654" duration="10290000" />
+      <workItem from="1579916915226" duration="12206000" />
+      <workItem from="1580434916102" duration="24058000" />
+      <workItem from="1580510990313" duration="6632000" />
+      <workItem from="1580521460197" duration="420000" />
+      <workItem from="1580521902101" duration="3723000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updated the readme">
+      <created>1579892044452</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579892044452</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated the readme">
+      <created>1579892181788</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579892181788</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Builds and runs in Rider on Ubuntu now.">
+      <created>1579932658047</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579932658047</updated>
+    </task>
+    <task id="LOCAL-00004" summary="SeedData now uses RoleManager and UserManager">
+      <created>1580444944914</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580444944914</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactored Db providers in Startup and DbContext classes">
+      <created>1580489382454</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580489382454</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated the readme" />
+    <MESSAGE value="Builds and runs in Rider on Ubuntu now." />
+    <MESSAGE value="SeedData now uses RoleManager and UserManager" />
+    <MESSAGE value="Refactored Db providers in Startup and DbContext classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored Db providers in Startup and DbContext classes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2302" y="409" key="#xdebugger.evaluate" timestamp="1579909762010">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2302" y="409" key="#xdebugger.evaluate/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1579909762010" />
+    <state width="888" height="466" key="DebuggerActiveHint" timestamp="1579909665054">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="888" height="466" key="DebuggerActiveHint/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1579909665054" />
+    <state x="2698" y="311" width="676" height="491" key="FileChooserDialogImpl" timestamp="1580523430539">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2698" y="311" width="676" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580523430539" />
+    <state width="1804" height="275" key="GridCell.Tab.0.bottom" timestamp="1580522563597">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="275" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580522563597" />
+    <state width="1804" height="275" key="GridCell.Tab.0.center" timestamp="1580522563597">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="275" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580522563597" />
+    <state width="1804" height="275" key="GridCell.Tab.0.left" timestamp="1580522563597">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="275" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580522563597" />
+    <state width="1804" height="275" key="GridCell.Tab.0.right" timestamp="1580522563597">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="275" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580522563597" />
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1580521421753">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421753" />
+    <state width="1804" height="340" key="GridCell.Tab.1.center" timestamp="1580521421753">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421753" />
+    <state width="1804" height="340" key="GridCell.Tab.1.left" timestamp="1580521421753">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421753" />
+    <state width="1804" height="340" key="GridCell.Tab.1.right" timestamp="1580521421753">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421753" />
+    <state width="1804" height="340" key="GridCell.Tab.2.bottom" timestamp="1580521421753">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.2.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421753" />
+    <state width="1804" height="340" key="GridCell.Tab.2.center" timestamp="1580521421753">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.2.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421753" />
+    <state width="1804" height="340" key="GridCell.Tab.2.left" timestamp="1580521421753">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.2.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421753" />
+    <state width="1804" height="340" key="GridCell.Tab.2.right" timestamp="1580521421753">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.2.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421753" />
+    <state width="1804" height="340" key="GridCell.Tab.3.bottom" timestamp="1580521421754">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.3.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421754" />
+    <state width="1804" height="340" key="GridCell.Tab.3.center" timestamp="1580521421754">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.3.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421754" />
+    <state width="1804" height="340" key="GridCell.Tab.3.left" timestamp="1580521421754">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.3.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421754" />
+    <state width="1804" height="340" key="GridCell.Tab.3.right" timestamp="1580521421754">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.3.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421754" />
+    <state width="1804" height="340" key="GridCell.Tab.4.bottom" timestamp="1580521421754">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.4.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421754" />
+    <state width="1804" height="340" key="GridCell.Tab.4.center" timestamp="1580521421754">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.4.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421754" />
+    <state width="1804" height="340" key="GridCell.Tab.4.left" timestamp="1580521421754">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.4.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421754" />
+    <state width="1804" height="340" key="GridCell.Tab.4.right" timestamp="1580521421754">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.4.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580521421754" />
+    <state x="2510" y="288" width="800" height="537" key="Rider.ProjectTemplateDialog.Size" timestamp="1580523179652">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2510" y="288" width="800" height="537" key="Rider.ProjectTemplateDialog.Size/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580523179652" />
+    <state x="2510" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1580489397492">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2510" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580489397492" />
+    <state x="2683" y="473" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579892352313">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2683" y="473" width="464" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1579892352313" />
+    <state x="2588" y="399" width="513" height="316" key="git4idea.ui.GitTagDialog" timestamp="1580444783819">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2588" y="399" width="513" height="316" key="git4idea.ui.GitTagDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1580444783819" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GoodBookNook/Controllers/BookController.cs</url>
+          <line>33</line>
+          <properties documentPath="$PROJECT_DIR$/GoodBookNook/Controllers/BookController.cs" initialLine="33">
+            <startOffsets>
+              <option value="884" />
+            </startOffsets>
+            <endOffsets>
+              <option value="898" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GoodBookNook/Controllers/AccountController.cs</url>
+          <line>18</line>
+          <properties documentPath="$PROJECT_DIR$/GoodBookNook/Controllers/AccountController.cs" initialLine="18">
+            <startOffsets>
+              <option value="484" />
+            </startOffsets>
+            <endOffsets>
+              <option value="514" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GoodBookNook/Controllers/AccountController.cs</url>
+          <line>25</line>
+          <properties documentPath="$PROJECT_DIR$/GoodBookNook/Controllers/AccountController.cs" initialLine="25">
+            <startOffsets>
+              <option value="688" />
+            </startOffsets>
+            <endOffsets>
+              <option value="710" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GoodBookNook/Controllers/BookController.cs</url>
+          <line>19</line>
+          <properties documentPath="$PROJECT_DIR$/GoodBookNook/Controllers/BookController.cs" initialLine="19">
+            <startOffsets>
+              <option value="529" />
+            </startOffsets>
+            <endOffsets>
+              <option value="538" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GoodBookNook/Repositories/AppDbContext.cs</url>
+          <line>24</line>
+          <properties documentPath="$PROJECT_DIR$/GoodBookNook/Repositories/AppDbContext.cs" initialLine="32">
+            <startOffsets>
+              <option value="844" />
+            </startOffsets>
+            <endOffsets>
+              <option value="954" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

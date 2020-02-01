@@ -25,5 +25,18 @@
     <None Remove="mono_crash.mem.16960.1.blob" />
     <None Remove="mono_crash.mem.30165.1.blob" />
     <None Remove="packages-microsoft-prod.deb" />
+    <None Remove="Migrations\MySqlMigrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\MySqlMigrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Migrations\MySqlMigrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Migrations\MySqlMigrations\**" />
   </ItemGroup>
 </Project>

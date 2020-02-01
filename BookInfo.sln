@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodBookNook.Tests", "GoodBookNook.Tests\GoodBookNook.Tests.csproj", "{241C0180-16FD-48CB-A7DD-88059AEE80C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlMigrations", "MySqlMigrations\MySqlMigrations.csproj", "{03EAA485-4D14-48E9-A188-9C7A2E31AC23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{241C0180-16FD-48CB-A7DD-88059AEE80C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{241C0180-16FD-48CB-A7DD-88059AEE80C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{241C0180-16FD-48CB-A7DD-88059AEE80C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03EAA485-4D14-48E9-A188-9C7A2E31AC23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03EAA485-4D14-48E9-A188-9C7A2E31AC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03EAA485-4D14-48E9-A188-9C7A2E31AC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03EAA485-4D14-48E9-A188-9C7A2E31AC23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
