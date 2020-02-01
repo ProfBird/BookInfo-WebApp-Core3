@@ -46,12 +46,12 @@ namespace GoodBookNook
             else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
             {
                 // For MariaDB
-                services.AddDbContext<MySqlDbContext>();
+                services.AddDbContext<AppDbContext, MySqlDbContext>();
             }
             else
             {
                 // For Mac OS with SQLite
-                services.AddDbContext<SqliteDbContext>();
+                services.AddDbContext<AppDbContext, SqliteDbContext>();
             }
 
             services.AddIdentity<AppUser, IdentityRole>()
@@ -98,7 +98,7 @@ namespace GoodBookNook
             // Add a few books and reviews as sample data.
             SeedData.Seed(context, app.ApplicationServices);
 
-            AppDbContext.CreateAdminAccount(app.ApplicationServices, Configuration).Wait();
+            //AppDbContext.CreateAdminAccount(app.ApplicationServices, Configuration).Wait();
         }
     }
 }

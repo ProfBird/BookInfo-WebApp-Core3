@@ -25,5 +25,15 @@
     <None Remove="mono_crash.mem.16960.1.blob" />
     <None Remove="mono_crash.mem.30165.1.blob" />
     <None Remove="packages-microsoft-prod.deb" />
+    <None Remove="mono_crash.mem.12591.1.blob" />
+    <None Remove="mono_crash.mem.14129.1.blob" />
+    <None Remove="mono_crash.mem.16999.1.blob" />
+    <None Remove="mono_crash.mem.19030.1.blob" />
+    <None Remove="mono_crash.mem.19852.1.blob" />
+    <None Remove="mono_crash.mem.21425.1.blob" />
+    <None Remove="mono_crash.mem.22809.1.blob" />
+    <None Remove="mono_crash.mem.25400.1.blob" />
+    <None Remove="mono_crash.mem.30846.1.blob" />
+    <None Remove="mono_crash.mem.9009.1.blob" />
   </ItemGroup>
 </Project>
