@@ -82,6 +82,7 @@ namespace GoodBookNook
                 // Click-jacking mitigation
                 // Tell the browser that the page can only be framed if the framing domain is this site's domain. 
                 httpContext.Response.Headers.Add("X-Frame-Options", "SAMEORIGIN");
+                
                 // Prevent session IDs on cookies from being cached, but allow everything else to be cached.
                 // httpContext.Response.Headers[HeaderNames.CacheControl]="no-cashe='set-cookie, set-cookie2'";
                 await next();
@@ -101,7 +102,7 @@ namespace GoodBookNook
             });
 
             // Add a few books and reviews as sample data.
-            SeedData.Seed(context, app.ApplicationServices);
+            SeedData.Seed(context);
 
             AppDbContext.CreateAdminAccount(app.ApplicationServices, Configuration).Wait();
         }
