@@ -101,6 +101,7 @@ namespace GoodBookNook
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
+            context.Database.Migrate();
             // Add a few books and reviews as sample data.
             SeedData.Seed(context);
 

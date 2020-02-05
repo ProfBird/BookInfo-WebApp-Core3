@@ -18,7 +18,7 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+	GlobalSection(ProjectConfigurationPlatforms) = postSolu
 		{4FCD2ABF-3A39-4D1E-B45B-60F85F5A8A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4FCD2ABF-3A39-4D1E-B45B-60F85F5A8A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FCD2ABF-3A39-4D1E-B45B-60F85F5A8A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,8 +33,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {449950D4-A26B-4ADD-8B7F-2843B01314C4}
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{6875E916-6FF9-4787-9B55-D78263834074} = {F51D0DC1-7743-4A98-AD3B-A549A3C6F1C9}
 	EndGlobalSection
 EndGlobal

@@ -19,8 +19,8 @@
         <e p="GoodBookNook.csproj" t="IncludeRecursive" />
         <e p="GoodBookNook.db" t="Include" />
         <e p="Migrations" t="Include">
-          <e p="20200126040201_Initial_Authorization.Designer.cs" t="Include" />
-          <e p="20200126040201_Initial_Authorization.cs" t="Include" />
+          <e p="20200205035224_MariaDB_Initial.Designer.cs" t="Include" />
+          <e p="20200205035224_MariaDB_Initial.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
