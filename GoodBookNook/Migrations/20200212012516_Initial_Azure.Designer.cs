@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GoodBookNook.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200126040201_Initial_Authorization")]
-    partial class Initial_Authorization
+    [Migration("20200212012516_Initial_Azure")]
+    partial class Initial_Azure
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

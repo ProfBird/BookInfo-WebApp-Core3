@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GoodBookNook.Migrations
 {
-    public partial class Initial_Authorization : Migration
+    public partial class Initial_Azure : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
