@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Views\Author\" />
   </ItemGroup>
 
