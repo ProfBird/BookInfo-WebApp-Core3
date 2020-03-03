@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		LICENSE = LICENSE
 		README.md = README.md
+		Dockerfile.txt = Dockerfile.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodBookNook.Tests", "GoodBookNook.Tests\GoodBookNook.Tests.csproj", "{241C0180-16FD-48CB-A7DD-88059AEE80C3}"
