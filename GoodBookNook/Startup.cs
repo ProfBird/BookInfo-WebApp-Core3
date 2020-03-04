@@ -22,8 +22,9 @@ namespace GoodBookNook
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+
+        // This is called by either version of the ConfigureServices method to add services used in both development and production.
+        private void ConfigureCommonServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -33,10 +34,20 @@ namespace GoodBookNook
             });
 
             services.AddMvc();
-
             // Inject our repositories into our controllers
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddTransient<IAuthorRepository, AuthorRepository>();
+
+            services.AddIdentity<AppUser, IdentityRole>()
+                    .AddEntityFrameworkStores<AppDbContext>()
+                    .AddDefaultTokenProviders();
+        }
+
+
+        // This version of ConfigureServices gets called by the runtime if ASPNETCORE_ENVIRONMENT = Development
+        public void ConfigureDevelopmentServices(IServiceCollection services)
+        {
+            ConfigureCommonServices(services);
 
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
@@ -59,10 +70,20 @@ namespace GoodBookNook
                       Configuration["ConnectionStrings:SQLiteConnection"]));
             }
 
-            services.AddIdentity<AppUser, IdentityRole>()
-                .AddEntityFrameworkStores<AppDbContext>()
-                .AddDefaultTokenProviders();
         }
+
+
+        // This version of ConfigureServices gets called by the runtime if ASPNETCORE_ENVIRONMENT = Production
+        public void ConfigureProductionServices(IServiceCollection services)
+        {
+            ConfigureCommonServices(services);
+
+            // We're using the Azure database in production
+            services.AddDbContext<AppDbContext>(
+                    options => options.UseSqlServer(
+                        Configuration["ConnectionStrings:AzureSqlConnection"]));
+        }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, AppDbContext context)

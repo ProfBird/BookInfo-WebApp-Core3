@@ -32,7 +32,7 @@ namespace GoodBookNook.Tests
             // Arrange
             var repo = new FakeBookRepository();
             AddTestBooks(repo);
-            var bookController = new BookController(repo);
+            var bookController = new BookController(repo, null);
 
             // Act - get a list of books sorted by title in ascending order
             var result = (ViewResult)bookController.Index();

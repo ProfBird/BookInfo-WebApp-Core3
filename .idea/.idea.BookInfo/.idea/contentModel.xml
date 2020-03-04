@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.Rider2019.3/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.3/system/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_BookInfo.-1995325298.00" t="ExcludeRecursive" />
     <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
     <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
     <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_BookInfo.-1709099761.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="BookInfo.sln" t="IncludeFlat" />
+      <e p="Dockerfile" t="Include" />
       <e p="GoodBookNook" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="appsettings.Production.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="AccountController.cs" t="Include" />
           <e p="AdminController.cs" t="Include" />
@@ -19,8 +24,8 @@
         <e p="GoodBookNook.csproj" t="IncludeRecursive" />
         <e p="GoodBookNook.db" t="Include" />
         <e p="Migrations" t="Include">
-          <e p="20200126040201_Initial_Authorization.Designer.cs" t="Include" />
           <e p="20200126040201_Initial_Authorization.cs" t="Include" />
+          <e p="20200126040201_Initial_Authorization.Designer.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
@@ -33,9 +38,19 @@
           <e p="LoginViewModel.cs" t="Include" />
           <e p="Review.cs" t="Include" />
         </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="GoodBookNook.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="FolderProfile.pubxml" t="Include" />
+          </e>
         </e>
         <e p="Repositories" t="Include">
           <e p="AppDbContext.cs" t="Include" />
@@ -47,6 +62,8 @@
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="Views" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="_ViewStart.cshtml" t="Include" />
           <e p="Account" t="Include">
             <e p="Login.cshtml" t="Include" />
           </e>
@@ -69,22 +86,8 @@
             <e p="Index.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
-            <e p="Error.cshtml" t="Include" />
             <e p="_Layout.cshtml" t="Include" />
-          </e>
-          <e p="_ViewImports.cshtml" t="Include" />
-          <e p="_ViewStart.cshtml" t="Include" />
-        </e>
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.Production.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="GoodBookNook.AssemblyInfo.cs" t="Include" />
-              <e p="GoodBookNook.RazorAssemblyInfo.cs" t="Include" />
-            </e>
+            <e p="Error.cshtml" t="Include" />
           </e>
         </e>
         <e p="wwwroot" t="Include">
@@ -105,7 +108,6 @@
           <e p="lib" t="Include">
             <e p="bootstrap" t="Include">
               <e p=".bower.json" t="Include" />
-              <e p="LICENSE" t="Include" />
               <e p="dist" t="Include">
                 <e p="css" t="Include">
                   <e p="bootstrap-theme.css" t="Include" />
@@ -130,44 +132,41 @@
                   <e p="npm.js" t="Include" />
                 </e>
               </e>
+              <e p="LICENSE" t="Include" />
             </e>
             <e p="jquery" t="Include">
               <e p=".bower.json" t="Include" />
-              <e p="LICENSE.txt" t="Include" />
               <e p="dist" t="Include">
                 <e p="jquery.js" t="Include" />
                 <e p="jquery.min.js" t="Include" />
                 <e p="jquery.min.map" t="Include" />
               </e>
+              <e p="LICENSE.txt" t="Include" />
             </e>
             <e p="jquery-validation" t="Include">
               <e p=".bower.json" t="Include" />
-              <e p="LICENSE.md" t="Include" />
               <e p="dist" t="Include">
                 <e p="additional-methods.js" t="Include" />
                 <e p="additional-methods.min.js" t="Include" />
                 <e p="jquery.validate.js" t="Include" />
                 <e p="jquery.validate.min.js" t="Include" />
               </e>
+              <e p="LICENSE.md" t="Include" />
             </e>
             <e p="jquery-validation-unobtrusive" t="Include">
               <e p=".bower.json" t="Include" />
-              <e p="LICENSE.txt" t="Include" />
               <e p="jquery.validate.unobtrusive.js" t="Include" />
               <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+              <e p="LICENSE.txt" t="Include" />
             </e>
           </e>
         </e>
       </e>
       <e p="GoodBookNook.Tests" t="IncludeRecursive">
         <e p="AuthorTest.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
         <e p="BookTest.cs" t="Include" />
         <e p="GoodBookNook.Tests.csproj" t="IncludeRecursive" />
-        <e p="Repositories" t="Include">
-          <e p="FakeAuthorRepository.cs" t="Include" />
-          <e p="FakeBookRepository.cs" t="Include" />
-        </e>
-        <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -176,11 +175,15 @@
             </e>
           </e>
         </e>
+        <e p="Repositories" t="Include">
+          <e p="FakeAuthorRepository.cs" t="Include" />
+          <e p="FakeBookRepository.cs" t="Include" />
+        </e>
       </e>
       <e p="LICENSE" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
       <e p="README.md" t="Include" />
       <e p="Solution Items" t="Include" />
-      <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
 </project>
