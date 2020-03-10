@@ -1,6 +1,11 @@
-﻿# download the ASP.NET Core runtime
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1.0
-# download the .NET Core runtime
-FROM mcr.microsoft.com/dotnet/core/runtime:3.1.0
+﻿# Download the ASP.NET Core runtime.
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
+
+# Copy files from the dev machine to the container.
 COPY GoodBookNook/bin/Release/netcoreapp3.1/publish/ app/
-# ENTRYPOINT ["dotnet", "app/GoodBookNook.dll"]
+
+# Change directories, we need to run the app from the app directory.
+WORKDIR app/
+
+# Start the web app when the container runs.
+ENTRYPOINT ["dotnet", "GoodBookNook.dll", "--environment=Production"]
