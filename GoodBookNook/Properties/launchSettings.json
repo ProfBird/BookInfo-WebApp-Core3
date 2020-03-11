@@ -21,12 +21,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "https://+:5002;http://+:5003"
+      "applicationUrl": "https://+:5001;http://+:5000"
     }
   }
 }
-
-/* applicationUrl is set by the project options in Visual Studio.
-   It is used when running the app from VS but does not appear to be used by published apps.
-   The + in the URL will be replaced with the ip or domain of the machine it is running on.
-*/
