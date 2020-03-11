@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 
 # Copy files from the dev machine to the container.
-COPY GoodBookNook/bin/Release/netcoreapp3.1/publish/ app/
+COPY GoodBookNook/bin/Release/netcoreapp3.1/ app/
 
 # Change directories, we need to run the app from the app directory.
 WORKDIR app/
